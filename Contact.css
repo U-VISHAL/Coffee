@@ -234,16 +234,3 @@ header .navbar {
     color: #000;
   }
 }
-
-
-
-.queries{
-    color: #fff;
-    position: relative;
-    left: 15%;
-    top: 23%;
-    font-variant: small-caps;
-    font-weight: bolder;
-    font-size: xx-large;
-
-}
