@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+   <html lang="en"> 
+   <head> 
+      <meta charset="UTF-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" href="product.css"> 
+      <title>Products-Coffee</title> 
+   </head> 
+   <body>
+    
+    <header> 
+        <nav class="navbar">
+         <a class="logo" href="index.html">Coffee<span> </span></a>
+         <ul class="menu-links">
+           <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="product.html">Products</a></li>
+           <li><a href="Testimonial.html">Testimonials</a></li>
+           <li><a href="About.html">About us</a></li>
+           <li><a href="Contact.html">Contact us</a></li>
+         </ul>
+         <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+       </nav>
+     </header>
+
+
+      <div class="container"> 
+         <div class="card__container"> 
+            <article class="card__article"> 
+               <img src="Ethiopian coffee.jpg" alt="image" class="card__img"> 
+               <div class="card__data"> 
+                  <span class="card__description">Bright and beautiful</span> 
+                  <h2 class="card__title">Ethiopian Yigacheffe</h2> 
+                  <a href="#" class="card__button">Read More</a> 
+               </div> 
+            </article> 
+            <article class="card__article"> 
+               <img src="flavored coffee 1.jpeg" alt="image" class="card__img"> 
+               <div class="card__data"> 
+                  <span class="card__description">As you wish</span> 
+                  <h2 class="card__title">Flavored Coffee</h2> 
+                  <a href="#" class="card__button">Read More</a> 
+               </div> 
+            </article> 
+            <article class="card__article"> 
+               <img src="Civat cat coffee.jpg" alt="image" class="card__img"> 
+               <div class="card__data"> 
+                  <span class="card__description">Clean and Hygiene</span> 
+                  <h2 class="card__title">Civat Cat Coffee</h2> 
+                  <a href="#" class="card__button">Read More</a> 
+               </div> 
+            </article> 
+         </div> 
+      </div> 
+
+      <script>
+         const header = document.querySelector("header");
+         const hamburgerBtn = document.querySelector("#hamburger-btn");
+         const closeMenuBtn = document.querySelector("#close-menu-btn");
+   
+         hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+   
+         closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+       </script>
+   </body> 
+</html>

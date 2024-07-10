@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header> 
+       <nav class="navbar">
+        <a class="logo" href="index.html">Coffee<span> </span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="Testimonial.html">Testimonials</a></li>
+          <li><a href="About.html">About us</a></li>
+          <li><a href="Contact.html">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+
+    <div class="aboutus">ABOUT US</div>
+    <div class="container">
+
+
+        <div class="left-image"><img src="Tea Estates (3).jpeg"> </div>
+        <div class="about-coffee">
+            <h2>Our Coffee</h2>
+            <p>Founded by someone and that's none of your business. Our coffee was created with one goal to create great and consistent coffee, share it with as many people as possible. Our aim is to source and roast some of the best coffee available. By paying premium prices, we enable coffee farmers to create sustainable business. It is one of our principles to treasure the value chain from crops to cup. All our coffees are scoring 86 points and more : they are fresh in season and roasted to perfection. As we have grown and changed over the years, we at our coffee production areas found new ways to share flavor and connect communities across India</p>
+        </div>
+        <div class="culture">
+            <h2>Culture of constant learning</h2>
+            <p>A culture of constant learning is the key to always pushing forward. We are consistently researching, testing and implementing best practices throughout our business to raise the bar. Making refractometers essential for our cafe brewing, holding advanced sensory learnings for junior roasters, and experimenting with processing at the farm level are just some of the ways that our highly skilled team is constantly evolving the way Indian coffee is treated, experienced or communicated about.</p>
+        </div>
+        <div class="right-image">
+            <img src="Coffee about.jpg">
+        </div>
+
+
+
+    </div>
+    
+
+
+
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+  
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      </script>
+      
+  </body>
+</html>

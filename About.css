@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url("teacup-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #C06B3E;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #C06B3E;
+  transition: 2s;
+}
+
+  
+#hamburger-btn {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn, #close-menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  #close-menu-btn{
+    font-weight: bolder;
+    margin-left:130px;
+    margin-top: -50px;
+  }
+  #close-menu-btn:hover {
+    color: #C06B3E;
+    cursor: pointer;
+  }
+
+  #hamburger-btn{
+    font-weight: bolder;
+  }
+
+  #hamburger-btn:hover {
+    color: #C06B3E;
+    cursor: pointer;
+  }
+
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+}
+
+
+/*Div*/
+
+.container{
+    width: 75%;
+    height: fit-content;
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.aboutus{
+    color: #C06B3E;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+    
+
+
+.left-image img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.right-image img{
+    width: 250px;
+    border-radius: 50px;
+}
+
+.about-coffee{
+    color: #fff;
+    width: 600px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    padding: 30px;
+}
+
+.culture{
+    color: #fff;
+    width: 600px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    padding: 30px;
+}
+
+.container p{
+    text-indent: 100px;
+}
+
+.container h2{
+    font-variant: small-caps;
+    color:#C06B3E
+}

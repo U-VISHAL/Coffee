@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="testimonial.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <header> 
+    <nav class="navbar">
+     <a class="logo" href="index.html">Coffee<span> </span></a>
+     <ul class="menu-links">
+       <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="product.html">Products</a></li>
+       <li><a href="Testimonial.html">Testimonials</a></li>
+       <li><a href="About.html">About us</a></li>
+       <li><a href="Contact.html">Contact us</a></li>
+     </ul>
+     <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+   </nav>
+ </header>
+<body>
+
+<div class="bg">
+    <h1 class="Testimonial">Testimonials</h1>
+    <h2 class="q"><blockquote><q>Change the world. Start with Coffee.</q></blockquote> </h2>
+    
+    <div class="nik">
+        <h4>Reviewer: Nikole from London</h4>
+        <p>(Ethiopian Yigacheffe)</p>
+        <p>I like this coffee it's really smooth anf has an taste of chocolate.
+        Service was brilliant and the coffee was grounded perfectly for the Cafetiere</p>
+    </div>
+
+    <div class="bris">
+        <h4>Reviewer: D Briscoe from Scotland</h4>
+        <p>(Civat Cat Coffee)</p>
+        <p>This is certainly worth trying. It has a distinctive and original flavor that makes it worth purchasing.
+            I would definitely recommend this to who would like something a bit different</p>
+    </div>
+
+    <div class="nat">
+        <h4>Reviewer: Natasha from London</h4>
+        <p>(Flavored Coffee)</p>
+        <p>This coffee has a bit of sweetness without compromising the taste. Good for evening when you want something sweeter</p>
+    </div>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+
+</div>
+
+</body>
+</html>
